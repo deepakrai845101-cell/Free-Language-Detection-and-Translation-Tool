@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>Free Language Detection & Translation Tool | Indian & USA Languages</title>
+    <meta name="description" content="Free online tool to detect languages, find origins & basic translation. Perfect for Indian languages like Hindi, Bhojpuri, Tamil and USA languages like Spanish, Chinese.">
+    <meta name="keywords" content="language detector online free, detect language from text, indian language detection tool, usa language identifier, which language is spoken where, bhojpuri language detector, translate bhojpuri to hindi, language translation tool free, identify language online, language origin checker">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-language"></i>
+                <span>LangDetect<span class="logo-highlight">.io</span></span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="#detection">Detect</a>
+                <a href="#translation">Translate</a>
+                <a href="#explorer">Explore</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="navMobile">
+            <a href="#detection">Detect Language</a>
+            <a href="#translation">Translation Tool</a>
+            <a href="#explorer">Language Explorer</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Free Language Detection & Translation Tool</h1>
+            <p class="hero-subtitle">Instantly identify languages, discover where they're spoken, and get basic translations. Focused on the rich linguistic diversity of India and the USA.</p>
+            <div class="cta-buttons">
+                <a href="#detection" class="btn btn-primary">
+                    <i class="fas fa-search"></i> Detect a Language
+                </a>
+                <a href="#translation" class="btn btn-secondary">
+                    <i class="fas fa-exchange-alt"></i> Translate Text
+                </a>
+            </div>
+            <div class="keyword-tags">
+                <span class="tag">#language detector online free</span>
+                <span class="tag">#indian language detection tool</span>
+                <span class="tag">#translate bhojpuri to hindi</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detection Tool Section -->
+    <section class="section" id="detection">
+        <div class="container">
+            <h2><i class="fas fa-search"></i> Detect Language From Text Online</h2>
+            <p class="section-description">Paste any text below to identify its language, geographic origin, script, and language family. Our tool combines keyword matching with script analysis for accurate results.</p>
+            
+            <div class="tool-card">
+                <div class="input-group">
+                    <textarea id="detectionInput" placeholder="Paste your text here. For example: हम तोहार बानी। or ¿Cómo estás? or நீங்கள் எப்படி இருக்கிறீர்கள்?" rows="5"></textarea>
+                    <button id="detectBtn" class="btn btn-primary">
+                        <i class="fas fa-play"></i> Detect Language
+                    </button>
+                </div>
+                
+                <div class="result-card" id="detectionResult">
+                    <h3><i class="fas fa-flag"></i> Detection Results</h3>
+                    <div class="result-placeholder">
+                        <p>Results will appear here after detection.</p>
+                    </div>
+                    <div class="result-details" id="resultDetails" style="display: none;">
+                        <div class="result-grid">
+                            <div class="result-item">
+                                <span class="result-label">Detected Language:</span>
+                                <span class="result-value" id="resultLanguage">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Country/Countries:</span>
+                                <span class="result-value" id="resultCountries">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">State/Region:</span>
+                                <span class="result-value" id="resultStates">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Language Family:</span>
+                                <span class="result-value" id="resultFamily">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Script Used:</span>
+                                <span class="result-value" id="resultScript">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="seo-content">
+                <h3>How Our Language Detection Works</h3>
+                <p>Our <strong>language detector online free</strong> tool uses a dual-method approach for reliable identification. First, it performs keyword matching against an extensive database of Indian and USA languages. Second, it analyzes Unicode character ranges to determine the script (like Devanagari, Arabic, or Cyrillic). This combination makes it particularly effective as an <strong>Indian language detection tool</strong> and <strong>USA language identifier</strong>, helping users answer "which language is spoken where" with regional specificity.</p>
+                <p>For Indian languages, the tool provides state-level granularity, recognizing that languages like Bhojpuri are predominantly spoken in Bihar and Uttar Pradesh, while Tamil is official in Tamil Nadu. This <strong>language origin checker</strong> is invaluable for researchers, students, and content creators working with multilingual data.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Translation Tool Section -->
+    <section class="section section-alt" id="translation">
+        <div class="container">
+            <h2><i class="fas fa-exchange-alt"></i> Language Translation Tool Free</h2>
+            <p class="section-description">Use our dictionary-based translation tool for supported language pairs. Perfect for basic comprehension and educational purposes.</p>
+            
+            <div class="tool-card">
+                <div class="translation-controls">
+                    <div class="control-group">
+                        <label for="sourceLanguage"><i class="fas fa-language"></i> Source Language</label>
+                        <select id="sourceLanguage">
+                            <option value="auto">Auto Detect</option>
+                            <!-- Options populated by JS -->
+                        </select>
+                    </div>
+                    <div class="swap-button-container">
+                        <button id="swapLanguages" class="btn-icon" title="Swap languages">
+                            <i class="fas fa-exchange-alt"></i>
+                        </button>
+                    </div>
+                    <div class="control-group">
+                        <label for="targetLanguage"><i class="fas fa-language"></i> Target Language</label>
+                        <select id="targetLanguage">
+                            <option value="hi">Hindi</option>
+                            <option value="en" selected>English</option>
+                            <option value="bh">Bhojpuri</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <textarea id="translationInput" placeholder="Enter text to translate. For example: हम तोहार बानी। (Bhojpuri) or ¿Cómo estás? (Spanish)" rows="4"></textarea>
+                    <textarea id="translationOutput" placeholder="Translation will appear here..." rows="4" readonly></textarea>
+                </div>
+                
+                <div class="button-group">
+                    <button id="translateBtn" class="btn btn-primary">
+                        <i class="fas fa-language"></i> Translate Text
+                    </button>
+                    <button id="clearTranslationBtn" class="btn btn-secondary">
+                        <i class="fas fa-eraser"></i> Clear
+                    </button>
+                </div>
+            </div>
+            
+            <div class="disclaimer">
+                <h4><i class="fas fa-exclamation-triangle"></i> Important Disclaimer</h4>
+                <p>This <strong>language translation tool free</strong> service is for educational and informational purposes only. Translations are based on a simplified dictionary and may not capture nuances, idioms, or complex grammar. For official or critical translations, please consult professional translation services.</p>
+            </div>
+            
+            <div class="seo-content">
+                <h3>Bridging Language Barriers</h3>
+                <p>Our translation feature supports key language pairs like <strong>Bhojpuri to Hindi</strong> and Spanish to English, addressing specific needs in both Indian and American contexts. The <strong>translate bhojpuri to hindi</strong> functionality helps speakers of this widely spoken but less digitally served Indian language access content in the more widely available Hindi. Similarly, Spanish-English translation serves the large bilingual population in the USA.</p>
+                <p>As a purely <strong>language translation tool free</strong> of APIs and external dependencies, it works entirely offline in your browser, ensuring privacy and accessibility. This makes it ideal for quick lookups, students learning new languages, or creators verifying content across languages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language Information Explorer -->
+    <section class="section" id="explorer">
+        <div class="container">
+            <h2><i class="fas fa-globe-americas"></i> Which Language Is Spoken Where</h2>
+            <p class="section-description">Explore detailed information about all supported languages, including their geographic distribution and linguistic characteristics.</p>
+            
+            <div class="tool-card">
+                <div class="control-group">
+                    <label for="languageSelect"><i class="fas fa-list"></i> Select a Language to Explore</label>
+                    <select id="languageSelect">
+                        <option value="">-- Choose a Language --</option>
+                        <!-- Options populated by JS -->
+                    </select>
+                </div>
+                
+                <div class="result-card" id="explorerResult">
+                    <h3><i class="fas fa-info-circle"></i> Language Information</h3>
+                    <div class="result-placeholder">
+                        <p>Select a language from the dropdown to view detailed information.</p>
+                    </div>
+                    <div class="result-details" id="explorerDetails" style="display: none;">
+                        <div class="result-grid">
+                            <div class="result-item">
+                                <span class="result-label">Language:</span>
+                                <span class="result-value" id="explorerLanguage">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Countries:</span>
+                                <span class="result-value" id="explorerCountries">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">States/Regions:</span>
+                                <span class="result-value" id="explorerStates">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Approx. Speakers:</span>
+                                <span class="result-value" id="explorerSpeakers">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Script:</span>
+                                <span class="result-value" id="explorerScript">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-label">Language Family:</span>
+                                <span class="result-value" id="explorerFamily">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="seo-content">
+                <h3>Understanding Linguistic Diversity</h3>
+                <p>India's 22 scheduled languages represent just a fraction of its incredible linguistic tapestry, with hundreds of languages and dialects across its states. Our tool helps <strong>identify language online</strong> from this diverse set, providing context about where each language is spoken. Similarly, the USA, often perceived as primarily English-speaking, is home to a rich mosaic of languages including Spanish (spoken by over 40 million), Chinese, Tagalog, Vietnamese, and Arabic.</p>
+                <p>This <strong>language origin checker</strong> goes beyond simple identification to provide cultural and geographic context, answering not just "what language is this?" but also "where is this language from and who speaks it?". This is particularly valuable for educators, researchers, and businesses operating in multilingual environments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-alt" id="faq">
+        <div class="container">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+            <p class="section-description">Common questions about our language detection and translation tool.</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How accurate is the language detection?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our detection combines keyword matching and script analysis for high accuracy with sufficient text input (recommended minimum 10-15 characters). For very short phrases, accuracy may vary. The tool is particularly reliable for Indian and USA languages in our focused database.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Which language pairs are supported for translation?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We currently support: Hindi ↔ English, Bhojpuri ↔ Hindi, Spanish ↔ English, and French ↔ English. These pairs were selected based on user needs in Indian and American contexts. We may expand support based on user feedback.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Does this tool work offline?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Since we don't use any APIs or external services, once the page is loaded in your browser, all functionality works completely offline. This ensures your text data never leaves your device, providing maximum privacy.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I use this tool for professional translation work?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No. This tool is for educational and basic informational purposes only. Our dictionary-based approach cannot capture nuances, idioms, or complex grammar. For professional, official, or critical translations, please use professional translation services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p class="section-description">For inquiries, suggestions, or feedback about the language tool.</p>
+            
+            <div class="contact-card">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <h4>Name</h4>
+                            <p>Deepak Rai</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div>
+                            <h4>Mobile</h4>
+                            <p>6202608187</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>deepakrai845106@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="contact-note"><i class="fas fa-info-circle"></i> These contact details appear only in this section for project purposes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <i class="fas fa-language"></i>
+                        <span>LangDetect<span class="logo-highlight">.io</span></span>
+                    </a>
+                    <p>Free language detection, origin & translation tool focused on India & USA languages.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#detection">Detection Tool</a>
+                    <a href="#translation">Translation Tool</a>
+                    <a href="#explorer">Language Explorer</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-keywords">
+                    <h4>Tool Features</h4>
+                    <span>Language Detector Online Free</span>
+                    <span>Indian Language Detection Tool</span>
+                    <span>USA Language Identifier</span>
+                    <span>Translate Bhojpuri to Hindi</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LangDetect.io | This tool is for educational purposes only.</p>
+                <p>Built with HTML, CSS & Vanilla JavaScript. No APIs or external libraries used.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
